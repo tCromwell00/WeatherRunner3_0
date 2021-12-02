@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7983ed5f-6fa0-4514-8eca-1b7340c88b92" name="Changes" comment="small commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/UC/WeatherRunner/Forecast.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/UC/WeatherRunner/Periods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/UC/WeatherRunner/Properties.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/logbooks/create-logbook.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/logbooks/create-logbook.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/logbooks/forecast.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/logbooks/forecast.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/logbooks/list-logbooks.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/logbooks/list-logbooks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UC/WeatherRunner/Forecast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UC/WeatherRunner/Forecast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UC/WeatherRunner/Periods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UC/WeatherRunner/Periods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UC/WeatherRunner/Properties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UC/WeatherRunner/Properties.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -5,33 +5,20 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Forecast {
 
-    private String updateTime;
-    private Periods[] periods;
+    private Properties properties;
 
-    public Forecast() {
+    public Properties getProperties() {
+        return properties;
     }
 
-    public String getUpdateTime() {
-        return updateTime;
-    }
-
-    public void setUpdateTime(String date) {
-        this.updateTime = date;
-    }
-
-    public Periods[] getPeriods() {
-        return periods;
-    }
-
-    public void setPeriods(Periods[] value) {
-        this.periods = value;
+    public void setProperties(Properties properties) {
+        this.properties = properties;
     }
 
     @Override
     public String toString() {
-        return "Quote{" +
-                "updateTime='" + updateTime + '\'' +
-                ", periods=" + periods +
+        return "Forecast{" +
+                "properties=" + properties +
                 '}';
     }
 }

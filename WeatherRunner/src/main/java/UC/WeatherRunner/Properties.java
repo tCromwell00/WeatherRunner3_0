@@ -1,23 +1,34 @@
 package UC.WeatherRunner;
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import java.util.Arrays;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Properties {
-    private Forecast forecast;
 
-    public Forecast getForecast() {
-        return forecast;
+    private Periods[] periods;
+    private String updateTime;
+
+    public Periods[] getPeriods() {
+        return periods;
     }
 
-    public void setForecast(Forecast forecast) {
-        this.forecast = forecast;
+    public void setPeriods(Periods[] periods) {
+        this.periods = periods;
+    }
+
+    public String getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(String updateTime) {
+        this.updateTime = updateTime;
     }
 
     @Override
     public String toString() {
         return "Properties{" +
-                "forecast='" + forecast + '\'' +
+                "periods=" + Arrays.toString(periods) +
+                ", updateTime='" + updateTime + '\'' +
                 '}';
     }
 }

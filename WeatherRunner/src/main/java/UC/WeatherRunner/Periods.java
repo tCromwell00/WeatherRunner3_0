@@ -1,37 +1,53 @@
 package UC.WeatherRunner;
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Periods {
 
-    private Long id;
-    private String quote;
+    private String number;
+    private int temperature;
+    private String temperatureUnit;
+    private String name;
 
-    public Periods() {
+    public String getNumber() {
+        return number;
     }
 
-    public Long getId() {
-        return this.id;
+    public void setNumber(String number) {
+        this.number = number;
     }
 
-    public String getQuote() {
-        return this.quote;
+    public int getTemperature() {
+        return temperature;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setTemperature(int temperature) {
+        this.temperature = temperature;
     }
 
-    public void setQuote(String quote) {
-        this.quote = quote;
+    public String getTemperatureUnit() {
+        return temperatureUnit;
+    }
+
+    public void setTemperatureUnit(String temperatureUnit) {
+        this.temperatureUnit = temperatureUnit;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override
     public String toString() {
-        return "Value{" +
-                "id=" + id +
-                ", quote='" + quote + '\'' +
+        return "Periods{" +
+                "number='" + number + '\'' +
+                ", temperature=" + temperature +
+                ", temperatureUnit='" + temperatureUnit + '\'' +
+                ", name='" + name + '\'' +
                 '}';
     }
 }
