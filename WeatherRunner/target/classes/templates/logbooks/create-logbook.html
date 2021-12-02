@@ -41,6 +41,11 @@
                     <input type="text" th:field="*{time}" class="form-control mb-4" id="pickTime" placeholder="Set the duration of the run: HH:MM:SS"/>
                 </div>
             </div>
+            <div class="col-3">
+                <div class="input-group mb-0">
+                    <input type="hidden" th:field="*{weather}" class="form-control mb-4" id="pickWeather" placeholder="Autofills weather on Submit"/>
+                </div>
+            </div>
             <div class="col-1">
                 <button class="btn btn-primary form-control" type="submit" id="btnCreate">Submit</button>
             </div>

@@ -9,6 +9,21 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/UC/WeatherRunner/Forecast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UC/WeatherRunner/Forecast.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UC/WeatherRunner/Periods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UC/WeatherRunner/Periods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UC/WeatherRunner/Properties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UC/WeatherRunner/Properties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UC/WeatherRunner/WeatherRunnerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UC/WeatherRunner/WeatherRunnerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UC/WeatherRunner/model/Logbook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UC/WeatherRunner/model/Logbook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/logbooks/create-logbook.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/logbooks/create-logbook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/logbooks/list-logbooks.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/logbooks/list-logbooks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UC/WeatherRunner/Forecast.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UC/WeatherRunner/Forecast.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UC/WeatherRunner/Periods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UC/WeatherRunner/Periods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UC/WeatherRunner/Properties.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UC/WeatherRunner/Properties.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UC/WeatherRunner/WeatherRunnerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UC/WeatherRunner/WeatherRunnerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UC/WeatherRunner/model/Logbook.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UC/WeatherRunner/model/Logbook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/logbooks/create-logbook.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/logbooks/create-logbook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/logbooks/list-logbooks.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/logbooks/list-logbooks.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

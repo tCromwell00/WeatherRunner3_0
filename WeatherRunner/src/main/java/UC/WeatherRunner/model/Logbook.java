@@ -23,14 +23,18 @@ public class Logbook {
     @Column(name="time")
     private String time;
 
+    @Column(name="weather")
+    private String weather;
 
 
 
-    public Logbook(int id, String date, double distance, String time) {
+
+    public Logbook(int id, String date, double distance, String time, String weather) {
         this.id = id;
         this.date = date;
         this.distance = distance;
         this.time = time;
+        this.weather = weather;
     }
 
     public Logbook(){}
@@ -67,6 +71,14 @@ public class Logbook {
         this.time = time;
     }
 
+    public String getWeather() {
+        return weather;
+    }
+
+    public void setWeather(String weather) {
+        this.weather = weather;
+    }
+
     @Override
     public String toString() {
         return "Logbook{" +
@@ -74,6 +86,7 @@ public class Logbook {
                 ", date='" + date + '\'' +
                 ", distance='" + distance + '\'' +
                 ", time='" + time + '\'' +
+                ", weather='" + weather + '\'' +
                 '}';
     }
 }

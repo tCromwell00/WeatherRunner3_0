@@ -21,4 +21,9 @@ public class Forecast {
                 "properties=" + properties +
                 '}';
     }
+
+    public String getWeather() {
+        return properties.getWeather();
+    }
+
 }

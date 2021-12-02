@@ -8,6 +8,7 @@ public class Periods {
     private int temperature;
     private String temperatureUnit;
     private String name;
+    private String shortForecast;
 
     public String getNumber() {
         return number;
@@ -41,13 +42,17 @@ public class Periods {
         this.name = name;
     }
 
+    public String getShortForecast() {
+        return shortForecast;
+    }
+
+    public void setShortForecast(String shortForecast) {
+        this.shortForecast = shortForecast;
+    }
+
     @Override
     public String toString() {
-        return "Periods{" +
-                "number='" + number + '\'' +
-                ", temperature=" + temperature +
-                ", temperatureUnit='" + temperatureUnit + '\'' +
-                ", name='" + name + '\'' +
-                '}';
+        return shortForecast + ", " + temperature + " " + temperatureUnit;
     }
+
 }

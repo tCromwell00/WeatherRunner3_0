@@ -31,4 +31,9 @@ public class Properties {
                 ", updateTime='" + updateTime + '\'' +
                 '}';
     }
+
+    public String getWeather() {
+        return periods[0].toString();
+    }
+
 }
