@@ -11,15 +11,32 @@
     <title>Forecast</title>
 </head>
 <body>
-<div class="tab-content" id="myTabContent">
-    <!-- Tab 1: Put the weather API stuff here -->
-    <div class="tab-pane fade show active p-3" id="checkWeather" role="tabpanel" aria-labelledby="home-tab">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Weather Runner</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" th:href="@{/WeatherRunner/list}">Previous Runs</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/WeatherRunner/newLog}">Add Run</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/WeatherRunner/forecast}">Weather</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+
+    <div class="text-center">
         <!--This is where there's going to be an iframe with the weather map visible.-->
         <!--Temporary fill-->
-        <a class="weatherwidget-io" href="https://forecast7.com/en/39d13n84d51/45219/?unit=us" data-label_1="CINCINNATI" data-label_2="WEATHER" data-theme="original" >CINCINNATI WEATHER</a>
-        <script>
-        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-      </script>
+        <h1 class="m-4">The current weather is <span th:text="${weather}"></span></h1>
+
     </div>
 </div>
 <!-- Optional JavaScript; choose one of the two! -->

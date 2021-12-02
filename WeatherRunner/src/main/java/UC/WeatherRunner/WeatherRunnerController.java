@@ -8,7 +8,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 
+import java.net.URI;
 import java.util.List;
 
 @Controller
@@ -28,12 +30,20 @@ public class WeatherRunnerController {
 
         //add logbooks to the spring model
         theModel.addAttribute("logbooks",theLogbooks);
-
+        RestTemplate restTemplate = new RestTemplate();
+        Forecast forecast = restTemplate.getForObject("https://api.weather.gov/gridpoints/ILN/34,39/forecast/hourly", Forecast.class);
+        String weatherString = forecast.getWeather();
+        theModel.addAttribute("weather",weatherString);
         return "logbooks/list-logbooks";
     }
 
     @GetMapping("/forecast")
-    public String showForecast(){
+    public String showForecast(Model theModel){
+
+        RestTemplate restTemplate = new RestTemplate();
+        Forecast forecast = restTemplate.getForObject("https://api.weather.gov/gridpoints/ILN/34,39/forecast/hourly", Forecast.class);
+        String weatherString = forecast.getWeather();
+        theModel.addAttribute("weather",weatherString);
         return "logbooks/forecast";
     }
 
@@ -41,6 +51,10 @@ public class WeatherRunnerController {
     public String newLog(Model theModel){
 
         //Model attribute for databinding
+        RestTemplate restTemplate = new RestTemplate();
+        Forecast forecast = restTemplate.getForObject("https://api.weather.gov/gridpoints/ILN/34,39/forecast/hourly", Forecast.class);
+        String weatherString = forecast.getWeather();
+        theModel.addAttribute("weather",weatherString);
         Logbook theLogbook = new Logbook();
         theModel.addAttribute("logbook",theLogbook);
         return "logbooks/create-logbook";
@@ -69,6 +83,13 @@ public class WeatherRunnerController {
     public String saveLogbook(@ModelAttribute("logbook") Logbook theLogbook){
 
         //Register the logbook
+        // Grabs current weather if new entry is being made. Does not modify existing entries
+        if (theLogbook.getId() == 0) {
+            RestTemplate restTemplate = new RestTemplate();
+            Forecast forecast = restTemplate.getForObject("https://api.weather.gov/gridpoints/ILN/34,39/forecast/hourly", Forecast.class);
+            String weatherString = forecast.getWeather();
+            theLogbook.setWeather(weatherString);
+        }
         logbookService.save(theLogbook);
 
         //Block duplicate submission for accidental page refresh

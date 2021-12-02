@@ -11,41 +11,73 @@
     <title>Track A New Run</title>
 </head>
 <body>
-<div class="container">
-    <h4>List of Runs</h4>
-    <a class="btn btn-primary" data-bs-toggle="collapse" th:href="@{/WeatherRunner/list}" role="button">List of Runs</a>
-    <p class="h4 mb-4">Enter a new Run</p>
-    <form action="#" th:action="@{/WeatherRunner/save}" th:object="${logbook}" method="POST">
-        <div class="row">
-            <div class="col-auto">
-                <div class="input-group mb-0">
-                    <input type="hidden" th:field="*{id}" class="form-control-mb-4" placeholder="ID"/>
-                </div>
-            </div>
-            <div class="col-auto">
-                <div class="input-group mb-0">
-                    <label for="pickDate" class="input-group-text">Date</label>
-                    <input type="text" th:field="*{date}" class="form-control mb-4" id="pickDate" placeholder="Set the date of the run: YYYY-MM-DD"/>
-                </div>
-            </div>
-            <div class="col-auto">
-                <div class="input-group mb-0">
-                    <label for="pickDistance" class="input-group-text">Distance (km)</label>
-                    <input type="number" th:field="*{distance}" class="form-control mb-4" id="pickDistance" placeholder="Set the distance of the run"/>
-                    <span class="input-group-text">km</span>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="input-group mb-0">
-                    <label for="pickTime" class="input-group-text">Duration</label>
-                    <input type="text" th:field="*{time}" class="form-control mb-4" id="pickTime" placeholder="Set the duration of the run: HH:MM:SS"/>
-                </div>
-            </div>
-            <div class="col-1">
-                <button class="btn btn-primary form-control" type="submit" id="btnCreate">Submit</button>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Weather Runner</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" th:href="@{/WeatherRunner/list}">Previous Runs</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/WeatherRunner/newLog}">Add Run</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/WeatherRunner/forecast}">Weather</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-3">
+            <h2>The current weather is <span th:text="${weather}"></span></h2>
         </div>
-    </form>
+        <div class="col-9">
+            <p class="h4 mb-4">Enter a new Run</p>
+            <form class="form w-75" action="#" th:action="@{/WeatherRunner/save}" th:object="${logbook}" method="POST">
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="hidden" th:field="*{id}" class="form-control" placeholder="ID"/>
+                        </div>
+                    </div>
+                    <div class="form-group mb-2">
+                        <div class="input-group">
+                            <label for="pickDate" class="input-group-text">Date</label>
+                            <input type="text" th:field="*{date}" class="form-control" id="pickDate" placeholder="Set the date of the run: YYYY-MM-DD"/>
+                        </div>
+                    </div>
+                    <div class="form-group mb-2">
+                        <div class="input-group">
+                            <label for="pickDistance" class="input-group-text">Distance (km)</label>
+                            <input type="number" th:field="*{distance}" class="form-control" id="pickDistance" placeholder="Set the distance of the run"/>
+
+                        </div>
+                    </div>
+                    <div class="form-group mb-2">
+                        <div class="input-group">
+                            <label for="pickTime" class="input-group-text">Duration</label>
+                            <input type="text" th:field="*{time}" class="form-control" id="pickTime" placeholder="Set the duration of the run: HH:MM:SS"/>
+                        </div>
+                    </div>
+                    <div class="form-group mb-2">
+                        <div class="input-group">
+                            <input type="hidden" th:field="*{weather}" class="form-control " id="pickWeather" placeholder="Autofills weather on Submit"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary" type="submit" id="btnCreate" onclick="if(!(confirm('If you left any fields empty, go back and fill them out.')))return false">Submit</button>
+                    </div>
+
+            </form>
+        </div>
+    </div>
+
+
+
 </div>
 <!-- Optional JavaScript; choose one of the two! -->
 <!-- Option 1: Bootstrap Bundle with Popper -->
