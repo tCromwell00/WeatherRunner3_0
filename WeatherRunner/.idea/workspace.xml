@@ -7,11 +7,13 @@
     <list default="true" id="7983ed5f-6fa0-4514-8eca-1b7340c88b92" name="Changes" comment="small commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UC/WeatherRunner/WeatherRunnerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UC/WeatherRunner/WeatherRunnerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/logbooks/create-logbook.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/logbooks/create-logbook.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/logbooks/forecast.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/logbooks/forecast.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/logbooks/list-logbooks.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/logbooks/list-logbooks.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/UC/WeatherRunner/WeatherRunnerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UC/WeatherRunner/WeatherRunnerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/logbooks/create-logbook.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/logbooks/create-logbook.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/logbooks/forecast.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/logbooks/forecast.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/logbooks/list-logbooks.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/logbooks/list-logbooks.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +92,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.WeatherRunnerApplication" />
+        <item itemvalue="Application.WeatherRunnerApplication" />
+        <item itemvalue="Application.WeatherRunnerApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -123,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638293673374</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Modifying">
+      <created>1638462944690</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1638462944690</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -145,6 +156,7 @@
     <MESSAGE value="commit" />
     <MESSAGE value="Final Commit" />
     <MESSAGE value="small commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="small commit" />
+    <MESSAGE value="Modifying" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modifying" />
   </component>
 </project>

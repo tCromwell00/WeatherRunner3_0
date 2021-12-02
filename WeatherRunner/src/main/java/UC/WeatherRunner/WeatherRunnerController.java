@@ -30,7 +30,10 @@ public class WeatherRunnerController {
 
         //add logbooks to the spring model
         theModel.addAttribute("logbooks",theLogbooks);
-
+        RestTemplate restTemplate = new RestTemplate();
+        Forecast forecast = restTemplate.getForObject("https://api.weather.gov/gridpoints/ILN/34,39/forecast/hourly", Forecast.class);
+        String weatherString = forecast.getWeather();
+        theModel.addAttribute("weather",weatherString);
         return "logbooks/list-logbooks";
     }
 
@@ -48,7 +51,10 @@ public class WeatherRunnerController {
     public String newLog(Model theModel){
 
         //Model attribute for databinding
-
+        RestTemplate restTemplate = new RestTemplate();
+        Forecast forecast = restTemplate.getForObject("https://api.weather.gov/gridpoints/ILN/34,39/forecast/hourly", Forecast.class);
+        String weatherString = forecast.getWeather();
+        theModel.addAttribute("weather",weatherString);
         Logbook theLogbook = new Logbook();
         theModel.addAttribute("logbook",theLogbook);
         return "logbooks/create-logbook";
