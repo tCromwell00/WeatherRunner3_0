@@ -35,7 +35,12 @@ public class WeatherRunnerController {
     }
 
     @GetMapping("/forecast")
-    public String showForecast(){
+    public String showForecast(Model theModel){
+
+        RestTemplate restTemplate = new RestTemplate();
+        Forecast forecast = restTemplate.getForObject("https://api.weather.gov/gridpoints/ILN/34,39/forecast/hourly", Forecast.class);
+        String weatherString = forecast.getWeather();
+        theModel.addAttribute("weather",weatherString);
         return "logbooks/forecast";
     }
 
